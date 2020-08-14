@@ -3,8 +3,6 @@
   box-sizing: border-box;
 }
 
-/* Imports */
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
   
 body {
   margin: 0;
@@ -33,6 +31,7 @@ a:hover {
   padding: 10px;
   position: fixed;
   text-align: center;
+  z-index: 1;
 }
 .nav {
   display: flex;
@@ -72,27 +71,56 @@ a:hover {
   margin-top: 20px;
 }
 
+/* Default header settings */
 
 header {
   text-align: center;
-  background: url('images/rsz_malaga_arena2004.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
-}
-header {
   line-height: 1.5;
+  min-height: 400px;
+  position: relative;
 }
+.main_page {
+  background: url('images/rsz_malaga_arena2004.jpg') no-repeat top center ;
+  background-size: cover;
+}
+
+/* 
+
+Experience page header settings 
+Image credit: Aymanejed/Pixabay.com
+
+*/
+
+.experience_header {
+  background: url('images/laptop-3196481_1280.jpg') no-repeat top center;
+  background-size: cover;
+}
+
+/* 
+
+Experience page header settings 
+Image credit: Alexas_Fotos/Pixabay.com
+
+*/
+
+.contact_header {
+  background: url('images/phone-3594206_1280.jpg') no-repeat top center;
+  background-size: cover;
+}
+
 header .profile-image {
   margin-top: 50px;
   width: 150px;
   height: 150px;
-  border-radius: 50%;
+  border-radius: 10%;
   border: 3px solid white;
   transition: all .5s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.5) rotate(360deg);
 }
 .tag {
   background-color: #efefef;
@@ -100,8 +128,17 @@ header .profile-image:hover {
   padding: 10px;
   border-radius: 5px;
   display: table;
-  margin: 10px auto;
+  margin: auto;
 } 
+
+.tag_alternative {
+  margin-bottom: 0;
+  background-color: darksalmon;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 .location {
   background-color: #222;
   color: yellow;
@@ -109,7 +146,7 @@ header .profile-image:hover {
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
-  max-width: 500px;
+  width: 500px;
   text-align: left;
   background: #fff;
   border-bottom: 4px solid #ccc;
@@ -140,13 +177,15 @@ ul.skills {
 
 footer {
   width: 100%;
-  min-height: 30px;
-  padding: 20px 0 40px 20px;
+  min-height: 10px;
+  padding: 10px;
+  background-color: black;
 }
 
 footer .copyright {
   top: -8px;
   font-size: .75em;
+  color: white;
 }
 
 footer ul {
@@ -166,7 +205,7 @@ a.social {
   width: 30px;
   height: 30px;
   background-size: 30px 30px;
-  opacity: .4;
+  opacity: .8;
   transition: all .5s;
 }
 a.github {
@@ -177,6 +216,32 @@ a.social:hover {
 }
 .clearfix {
   clear: both;
+}
+
+/* Contact form */
+
+.contact_form {
+  height: 100%;
+  width: 90%;
+  margin: auto;
+  background-color: #e6e3dc;
+  padding: 10px;
+}
+
+.contact_form li {
+  list-style: none;
+  text-align: left;
+  font-weight: bold;
+}
+
+.contact_form input, textarea {
+  width: 90%;
+}
+
+button {
+  font-weight: bold;
+  padding: 10px;
+  width: 150px;
 }
 
 /* Styles for larger screens */
@@ -200,11 +265,6 @@ a.social:hover {
     padding: 0 30px;
   }
 
-
-  main {
-    padding-top: 20px;
-  }
-
   main p {
     line-height: 1.6em;
   }
@@ -220,3 +280,4 @@ a.social:hover {
 
 }
 
+/* No errors found but 2 warnings on lines 184 & 187 */
