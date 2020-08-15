@@ -24,7 +24,7 @@ a:hover {
 
 /* Section Styles */
 
-.main-nav {
+nav {
   width: 100%;
   background: black;
   min-height: 30px;
@@ -84,7 +84,7 @@ header {
 }
 .main_page {
   background: url('images/rsz_malaga_arena2004.jpg') no-repeat top center ;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 /* 
@@ -96,7 +96,7 @@ Image credit: Aymanejed/Pixabay.com
 
 .experience_header {
   background: url('images/laptop-3196481_1280.jpg') no-repeat top center;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 /* 
@@ -108,7 +108,7 @@ Image credit: Alexas_Fotos/Pixabay.com
 
 .contact_header {
   background: url('images/phone-3594206_1280.jpg') no-repeat top center;
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 header .profile-image {
