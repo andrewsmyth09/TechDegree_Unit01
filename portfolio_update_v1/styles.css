@@ -175,6 +175,13 @@ ul.skills {
   background: #0399ff;
 }
 
+/* Hobby card */
+
+.hobby-img {
+  width: 100%;
+  height: 10%;
+}
+
 footer {
   width: 100%;
   min-height: 10px;
